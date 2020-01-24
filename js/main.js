@@ -5,7 +5,7 @@ let image=document.getElementById('image');
 let info=document.getElementById('info');
 let wrapper=document.getElementsByClassName('wrapper');
 let win_wid=document.documentElement.clientWidth;
-//let r=win_wid/4.7;
+
 let surname=document.getElementById('surname');
 let name=document.getElementById('name');
 let patronymic=document.getElementById('patronymic');
@@ -15,9 +15,6 @@ let close=document.getElementById('close');
 
 
 window.onload=function(){
-	//let req=new XMLHttpRequest();
-	
-
 	let k=[
 	    { id:"surname", header:"Фамилия", fillspace:true},
 	    { id:"name", header:"Имя", fillspace:true},
@@ -25,11 +22,10 @@ window.onload=function(){
 	  ];
 
 
-	//req.onreadystatechange=function(){
+	
 	$.ajax({
   		url: 'php/load_data.php',
   		success: function(data){
-  			//alert('witchouse');
     		db_data=JSON.parse(data);
     		let array=[]
 			for(let i=0;i<db_data.length;i++){
