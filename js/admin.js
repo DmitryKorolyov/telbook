@@ -6,7 +6,6 @@ let info=document.getElementById('info');
 let wrapper=document.getElementsByClassName('wrapper');
 let close=document.getElementById('close');
 let win_wid=document.documentElement.clientWidth;
-let r=win_wid/4.5;
 
 let surname=document.getElementById('surname');
 let name=document.getElementById('name');
@@ -56,7 +55,7 @@ window.onload=function(){
 					    	"onItemClick":function(id, e, trg){
 					    		let num=array[this.getItem(id).id-1]["number"];
 					    		let num_str=array[this.getItem(id).id-1]["id"];
-					    		//alert(this.getItem(id).number);
+					    	
 					    	switch(head_flag){
 					    		case 2:
 					    			document.location.href = "https://vhost100866.cpsite.ru/php/delete.php?number="+num;
