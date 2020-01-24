@@ -3,9 +3,6 @@ padding: 0;
 margin: 0;
 }
 body{
-	/*background-color:#456496;*/
-	    /*background-color: #d5e4f7;*/
-	    /*background-color: #3d98d4;*/
 	    background-color:#485382;
 }
 
@@ -18,7 +15,6 @@ body{
 
 	height:60px;
 	width:100%;
-	/*background-color:#003347; */
 	background-color:#2d3557;
 	color:#ffffff;
 	display:flex;
